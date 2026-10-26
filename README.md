@@ -2,7 +2,7 @@
 
 # design&ship
 
-**Design long. Ship short.**
+**Design long. Ship once.**
 A Claude Code plugin for infra, ops and multi-repo changes: measure first, get a GO, then execute in one clean batch.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
