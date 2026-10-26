@@ -1,0 +1,10 @@
+{
+  "name": "design-and-ship",
+  "description": "Design long, ship short. A measured-evidence method for infra, ops and multi-repo changes: design doc, runbook with rollback, owner GO, one-go execution, execution log.",
+  "version": "0.1.0",
+  "author": { "name": "Moisés Jurado" },
+  "homepage": "https://github.com/moisesjurad0/design-and-ship",
+  "repository": "https://github.com/moisesjurad0/design-and-ship",
+  "license": "MIT",
+  "keywords": ["infrastructure", "operations", "runbook", "planning", "migration", "workflow", "design-doc"]
+}

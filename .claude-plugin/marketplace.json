@@ -1,0 +1,25 @@
+{
+  "name": "design-and-ship",
+  "owner": {
+    "name": "Moisés Jurado",
+    "url": "https://github.com/moisesjurad0"
+  },
+  "metadata": {
+    "description": "Design long, ship short: a method for infra, ops and multi-repo work with a coding agent.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "design-and-ship",
+      "source": "./plugins/design-and-ship",
+      "description": "Measure first, design long (AS-IS, TO-BE, runbook, rollback, decisions), get the owner's GO, then ship in one go with an execution log.",
+      "version": "0.1.0",
+      "author": { "name": "Moisés Jurado" },
+      "homepage": "https://github.com/moisesjurad0/design-and-ship",
+      "repository": "https://github.com/moisesjurad0/design-and-ship",
+      "license": "MIT",
+      "keywords": ["infrastructure", "operations", "runbook", "planning", "migration", "workflow", "design-doc"],
+      "category": "workflow"
+    }
+  ]
+}
