@@ -175,6 +175,20 @@ Real-world runs make this better: if you used the method, an sanitized example o
 
 Star the repo, so others find it, and tell me what broke or what you would change. Issues and PRs are welcome.
 
+## About the author
+
+**Moisés Jurado** is a DevOps and cloud platform engineer (Python, C#, Java, Docker, Kubernetes). This method was born running real multi-environment cloud operations, where a change that is designed badly costs more than one that is designed slowly.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-moisesjurad0-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moisesjurad0/)
+[![Credly](https://img.shields.io/badge/Credly-certifications-FF6B00?logo=credly&logoColor=white)](https://www.credly.com/users/moisesjurad0)
+[![GitHub](https://img.shields.io/badge/GitHub-moisesjurad0-181717?logo=github&logoColor=white)](https://github.com/moisesjurad0)
+[![GitHub followers](https://img.shields.io/github/followers/moisesjurad0?style=social)](https://github.com/moisesjurad0)
+
+- Star this repo so other engineers find it: [moisesjurad0/design-and-ship](https://github.com/moisesjurad0/design-and-ship)
+- Hiring, consulting or a talk? [Contact me on LinkedIn](https://www.linkedin.com/in/moisesjurad0/)
+
+<sub>Built with [Claude Code](https://claude.com/claude-code).</sub>
+
 ## License
 
 [MIT](LICENSE) © Moisés Jurado

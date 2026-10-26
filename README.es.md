@@ -128,6 +128,20 @@ Las corridas reales mejoran el método: un ejemplo anonimizado o una lección ap
 
 Dale una estrella al repo para que otros lo encuentren, y cuéntame qué falló o qué cambiarías.
 
+## Sobre el autor
+
+**Moisés Jurado** es ingeniero DevOps y de plataforma cloud (Python, C#, Java, Docker, Kubernetes). Este método nació operando entornos cloud reales y multi-ambiente, donde un cambio mal diseñado cuesta más que uno diseñado con calma.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-moisesjurad0-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/moisesjurad0/)
+[![Credly](https://img.shields.io/badge/Credly-certifications-FF6B00?logo=credly&logoColor=white)](https://www.credly.com/users/moisesjurad0)
+[![GitHub](https://img.shields.io/badge/GitHub-moisesjurad0-181717?logo=github&logoColor=white)](https://github.com/moisesjurad0)
+[![GitHub followers](https://img.shields.io/github/followers/moisesjurad0?style=social)](https://github.com/moisesjurad0)
+
+- Dale una estrella al repo para que otros ingenieros lo encuentren: [moisesjurad0/design-and-ship](https://github.com/moisesjurad0/design-and-ship)
+- ¿Contratación, consultoría o una charla? [Escríbeme por LinkedIn](https://www.linkedin.com/in/moisesjurad0/)
+
+<sub>Hecho con [Claude Code](https://claude.com/claude-code).</sub>
+
 ## Licencia
 
 [MIT](LICENSE) © Moisés Jurado
