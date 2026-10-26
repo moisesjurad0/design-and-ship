@@ -1,0 +1,22 @@
+name: Feature request or method improvement
+description: Suggest a command, template, rule or example
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or real failure
+      description: What went wrong, or what was missing, in a real run? Sanitize it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change? If it is a rule, how would you know it was violated?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

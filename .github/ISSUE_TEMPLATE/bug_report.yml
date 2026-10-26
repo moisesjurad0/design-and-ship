@@ -1,0 +1,33 @@
+name: Bug report
+description: The plugin does not install, trigger or behave as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Claude Code version
+      description: Output of `claude --version`
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      placeholder: "0.1.0"
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Commands you ran, including `/plugin` commands. Remove anything private.
+  - type: textarea
+    id: validate
+    attributes:
+      label: Output of `claude plugin validate`
+      render: text

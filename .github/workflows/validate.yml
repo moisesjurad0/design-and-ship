@@ -1,0 +1,56 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  manifests:
+    name: Validate manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - name: JSON syntax
+        run: |
+          set -euo pipefail
+          for f in .claude-plugin/marketplace.json plugins/design-and-ship/.claude-plugin/plugin.json; do
+            jq empty "$f"
+            echo "ok: $f"
+          done
+      - name: Required fields and consistency
+        run: |
+          set -euo pipefail
+          m=.claude-plugin/marketplace.json
+          p=plugins/design-and-ship/.claude-plugin/plugin.json
+          jq -e '.name and .owner.name and (.plugins | length > 0)' "$m" >/dev/null
+          jq -e '.plugins[] | .name and .source' "$m" >/dev/null
+          jq -e '.name' "$p" >/dev/null
+          test "$(jq -r '.plugins[0].name' "$m")" = "$(jq -r '.name' "$p")"
+          test "$(jq -r '.plugins[0].version' "$m")" = "$(jq -r '.version' "$p")"
+          test -d "$(jq -r '.plugins[0].source' "$m")"
+      - name: Skill and commands frontmatter
+        run: |
+          set -euo pipefail
+          for f in plugins/design-and-ship/skills/*/SKILL.md; do
+            head -1 "$f" | grep -qx -- '---'
+            grep -q '^name: ' "$f"
+            grep -q '^description: ' "$f"
+          done
+          for f in plugins/design-and-ship/commands/*.md; do
+            head -1 "$f" | grep -qx -- '---'
+            grep -q '^description: ' "$f"
+          done
+
+  links:
+    name: Markdown links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: lycheeverse/lychee-action@v2.4.1
+        with:
+          args: --no-progress --offline --include-fragments '**/*.md'
+          fail: true
